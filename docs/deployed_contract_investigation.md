@@ -29,7 +29,7 @@ to undestand how each contarct integrate with each other
   https://etherscan.io/address/0xb6eb37095ae1a28aa320b9a9730f8cde8000f6d2
 
   - create calls addGroup
-  - create validates is included in the Market address set with address validator validateGroup
+  - create validates included in the Market address set with address validator validateGroup
   - validateGroup checks Group isGroup, deposit case -> Market group
 
 - MarketGroup
@@ -77,3 +77,21 @@ to undestand how each contarct integrate with each other
 
   - default token allocation is 95% creator and 5 % for project owner
     https://etherscan.io/token/0x528010540517dd3b708d8ff7036f841fea0135b2#balances
+
+- Vote Counter
+  https://etherscan.io/address/0x3d222830d9ad5fc76e7e63a3ed822f6d8980342d#code
+
+  - controls who can enable market
+  - voteMarket validates the voting deadline has not passed.
+  - calls Policy marketApproval wether possible to enable market
+  - vote amount is fetched from lockup getValue
+
+- Policy
+  https://etherscan.io/address/0xa220a9f9ed7c434f0bf2a45d86188fe22026f1d4#code
+
+  - check upvote is more than 9999999999999999999
+  - and also consider negative vote (it will be ignored for this case)
+
+-> this is changed!!
+now policy is updated by this patch.
+https://github.com/dev-protocol/protocol/pull/764

@@ -6,6 +6,8 @@ import "hardhat-gas-reporter";
 const enableGasReport = !!process.env.ENABLE_GAS_REPORT;
 const enableProduction = process.env.COMPILE_MODE === "production";
 
+const timeout = 500000;
+
 module.exports = {
   solidity: {
     version: "0.5.17",
@@ -16,7 +18,12 @@ module.exports = {
       },
     },
   },
+  networks: {
+    localhost: {
+      timeout,
+    },
+  },
   mocha: {
-    timeout: 50000,
+    timeout,
   },
 };

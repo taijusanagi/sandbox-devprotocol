@@ -8,5 +8,9 @@
    - MarketFactory->create(behaviorAddress)
    - this gives you create market contract address
 
-3. PropertyFacotry calls createAndAuthenticate, which calls market created in 1 authenticateFromPropertyFactory
+3. Get Dev for voting
+
+4. Vote for market approve
+
+5. PropertyFacotry calls createAndAuthenticate, which calls market created in 1 authenticateFromPropertyFactory
    - this authenticateFromPropertyFactory calls behavior authenticate which is implemented in 1
