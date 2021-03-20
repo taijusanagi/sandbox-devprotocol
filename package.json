@@ -6,7 +6,8 @@
     "prepare": "husky install",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{.ts,.js,tsx,jsx,json,md,sol}\"",
     "lint": "eslint . --ignore-path .gitignore",
-    "test": "hardhat test",
+    "run-localchain": "hardhat node",
+    "test": "hardhat test --network localhost",
     "build": "hardhat compile"
   },
   "devDependencies": {
