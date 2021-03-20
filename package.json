@@ -36,6 +36,8 @@
     "typescript": "^4.2.3"
   },
   "dependencies": {
-    "@devprotocol/protocol": "git://github.com/dev-protocol/protocol.git#401beb3e046cc9ce8c6345c213e5e1a65793477f"
+    "@devprotocol/dev-kit": "^4.3.0",
+    "@devprotocol/protocol": "git://github.com/dev-protocol/protocol.git#401beb3e046cc9ce8c6345c213e5e1a65793477f",
+    "regenerator-runtime": "^0.13.7"
   }
 }
