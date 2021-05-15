@@ -1,10 +1,12 @@
-### DevProtocol Sandbox
+## DevProtocol Sandbox
 
-This project aims to create own market and integrating to Dev protocol
+### Purpose
 
-```
-yarn run-localchain --fork <etherum mainnet rpc url>
-yarn test
-```
+This project aims to create own market and integrating to Dev protocol.
 
-Please check docs folder for the investigation detail.
+### Documentation
+Please check [docs](https://github.com/taijusanagi/sandbox-devprotocol/tree/master/docs) for the investigation detail.
+
+### Result
+Understand the basic of dev protocol and creating own market is not possibe because of the update.
+So this repository is closed and archived.
